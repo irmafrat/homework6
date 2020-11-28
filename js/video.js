@@ -29,4 +29,10 @@ document.querySelector("#faster").addEventListener("click", function() {
 	video.playbackRate = 2.0;
 });
 
+document.querySelector("#volumeSlider").addEventListener("change", function() { 
+	console.log("this");
+	console.log(this.value);
+	video.volume = this.value / 100;
+});
+
 
